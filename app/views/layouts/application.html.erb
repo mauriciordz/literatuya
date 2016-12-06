@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Literatuya</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -10,6 +11,9 @@
 
   <body>
     <%= render 'layouts/header' %>
-    <%= yield %>
+    <div class="container main">
+      <%= yield %>
+    </div>
+    <%= render 'layouts/footer' %>
   </body>
 </html>
